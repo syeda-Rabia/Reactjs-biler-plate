@@ -1,0 +1,14 @@
+.loader {
+  background-color: var(--light-black) !important;
+  height: 100%;
+  width: 100%;
+  .loaderinner {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  svg {
+    color: var(--primary) !important;
+  }
+}

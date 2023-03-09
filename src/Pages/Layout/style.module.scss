@@ -1,0 +1,28 @@
+@import "../../Assets/Scss/veriables.scss";
+
+.contentPage {
+  padding-left: 250px;
+  padding-top: 9vh;
+  height: 100vh;
+  background: rgb(243, 242, 242);
+  .content {
+    padding: 25px;
+    padding-top: 35px;
+  
+    height: 91vh;
+    margin: 0px;
+    // border-radius: 16px 16px 0 0;
+    overflow: auto;
+    background: var(--content-bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contentPage {
+    padding-left: 0px;
+    padding-top: 58px;
+    height: 100vh;
+    background: var(--white);
+  }
+}

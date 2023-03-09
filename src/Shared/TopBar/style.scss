@@ -1,0 +1,95 @@
+@import "../../Assets/Scss/veriables.scss";
+
+.navBarDesign {
+  padding-left: 250px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: transparent !important;
+  .innerNavBody {
+    width: 100%;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    .userTopImg {
+      width: 45px;
+      margin-left: auto;
+    }
+  }
+}
+.profileSettingPopover {
+  &.notification {
+    .popover {
+      min-width: 380px;
+    }
+  }
+  .popover {
+    background:$white;
+    max-width: fit-content;
+    border: $border;
+    border-radius: $border-radius-10;
+    .popover-header {
+      border: none;
+      background: transparent;
+      color:  #0e0e0e ;
+      padding: 20px;
+      font-size: $font-22;
+      &::before {
+        display: none;
+      }
+    }
+    .popover-inner {
+      border-radius: 10px;
+      overflow: hidden;
+      // padding: 9px;
+    }
+    .popover-body {
+      padding: 0px;
+      padding-top: 0px;
+    }
+    .dropdown-user-menu {
+      margin: 0px;
+      margin-top: 2px;
+      list-style-type: none;
+      .notificationList {
+        color: var(--light-gray);
+        .notification-name {
+          color: var(--primary);
+        }
+      }
+      a {
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: $font-weight-600;
+      }
+      li {
+        padding: 8px 19px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        &:hover {
+          background-color: $primary !important;
+          color:$white;
+          
+        }
+      }
+      .setting-dropdown {
+        svg {
+          width: 20px;
+          margin-right: 10px !important;
+          margin-top: -4px;
+          path {
+            fill: var(--primary);
+          }
+        }
+      }
+    }
+    .popover-arrow {
+      &::after {
+        border-bottom-color: var(--primary) !important;
+      }
+    }
+  }
+}
